@@ -48,6 +48,7 @@
  
 - push a git its impt
  - package-lock-json  and package json also  re create a node_modules
+   
 =====================================
 
 # Server Host
@@ -58,6 +59,7 @@
   - npx if we executive a parcel 
     - 1) npm install react     
     - 2) npm install react-dom
+      3) 
 =====================================
 
 # Parcel
