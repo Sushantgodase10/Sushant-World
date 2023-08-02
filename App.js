@@ -1,15 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react';
-import { ReactDOM } from 'react';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const App = () => {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  )
-}
+const heading = React.createElement("h1", { id: "heading" }, "Sushant World");
 
-export default App
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const styles = StyleSheet.create({})
+root.render(heading);
+
+// time 18.34 seesion 3 rd
