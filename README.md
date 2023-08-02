@@ -62,19 +62,5 @@
 # Parcel
 https://parceljs.org/
 
-  - Dev Build
-  - Local server
-  - HMR = Hot Module Replacement
-  - File Watching Algorithm - written in C++
-  - Caching - Faster Builds
-  - Image Optimization
-  - Minification
-  - Bundling
-  - Compress
-  - Consistent Hashing
-  - Code Splitting
-  - Differential Bundling - support older broweers
-  - Diagnostic
-  - Error Handling
-  - HTTPs
-  - Tree Shaking remove unused code
+what is npm ?
+=> npm does have a full from but npm  not a node pakage manager , npm manage a pakage but does not stand node  pakages manager
