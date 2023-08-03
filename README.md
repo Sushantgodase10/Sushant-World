@@ -68,3 +68,10 @@ https://parceljs.org/
 
 what is npm ?
 => npm does have a full from but npm  not a node pakage manager , npm manage a pakage but does not stand node  pakages manager
+
+# Extension
+- Better Comments
+- Prettier More - Code formatter
+- ESLint
+# What a Funaction Component
+- it's funaction it is normal function javascript function which returns same pc of react element ans same pic of jax code
