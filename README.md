@@ -7,12 +7,14 @@
 - git remote add origin https://github.com/Sushantgodase10/Sushant-World.git
 - git push -u origin main
 
-//=---------------------------
+  ---------------------------------------
 
 - git remote add origin https://github.com/Sushantgodase10/Sushant-World.git
 - git branch -M main
 - git push -u origin main
-===============================
+
+  ----------------------------------------
+  
 # 2 what is npm ?
 - => npm does have a full from but npm  not a node pakage manager , npm manage a pakage but does not stand node  pakages manager
 
@@ -32,7 +34,7 @@
   "author": "Sushant Godase",
   "license":
 
-===============================
+--------------------------------------------
 
 # 3 Dependencie Package
 - Two Type Dependency Package
@@ -47,7 +49,8 @@
  
 - push a git its impt
  - package-lock-json  and package json also  re create a node_modules
-=====================================
+   
+----------------------------------------------
 
 # Server Host
 
@@ -57,10 +60,18 @@
   - npx if we executive a parcel 
     - 1) npm install react     
     - 2) npm install react-dom
-=====================================
+      3) 
+------------------------------------------------
 
 # Parcel
 https://parceljs.org/
 
 what is npm ?
 => npm does have a full from but npm  not a node pakage manager , npm manage a pakage but does not stand node  pakages manager
+
+# Extension
+- Better Comments
+- Prettier More - Code formatter
+- ESLint
+# What a Funaction Component
+- it's funaction it is normal function javascript function which returns same pc of react element ans same pic of jax code
