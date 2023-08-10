@@ -25,3 +25,4 @@ const {cloudinaryImageId, name,cuisine,locality,areaName,costForTwo,avgRating} =
 
 export default ReatauranCard;
 
+// Note This files

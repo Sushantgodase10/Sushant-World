@@ -28148,7 +28148,7 @@ const ReatauranCard = (props)=>{
     }, undefined);
 };
 _c = ReatauranCard;
-exports.default = ReatauranCard;
+exports.default = ReatauranCard; // Note This files
 var _c;
 $RefreshReg$(_c, "ReatauranCard");
 
