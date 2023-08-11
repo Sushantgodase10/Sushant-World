@@ -82,3 +82,7 @@ what is npm ?
 - Two Type Hooks
 - useState();
 - useEffect();
+
+# What is this CORS policy ?
+-> Are browser blocker to calling api from one origin to different origin , if there is origin mismatch the 
+   browser block this api call that is a cors policy
