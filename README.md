@@ -85,4 +85,11 @@ what is npm ?
 
 # What is this CORS policy ?
 -> Are browser blocker to calling api from one origin to different origin , if there is origin mismatch the 
-   browser block this api call that is a cors policy
+   browser block this api call that is a cors policy. 
+https://www.youtube.com/watch?v=tcLW5d0KAYE
+
+- Add CORS Extension
+- Allow CORS: Access-Control-Allow-Origin
+# what is shimmer ui
+-> A shimmer UI is a version of the UI that doesn't contain actual content, but instead mimics the layout and 
+   shapes of the content that will eventually appear
