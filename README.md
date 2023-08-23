@@ -13,7 +13,14 @@
 - git remote add origin https://github.com/Sushantgodase10/Sushant-World.git
 - git branch -M main
 - git push -u origin main
-
+- 
+# git config solve 
+- 1  git checkout  US-SkeletonUI
+- 2  git pull
+- 3  git checkout master
+- 4  git pull
+- git merge master
+-      
   ----------------------------------------
   
 # 2 what is npm ?
