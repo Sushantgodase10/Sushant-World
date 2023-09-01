@@ -28,7 +28,9 @@ margin: 10px;
 .res-card {
     margin: 5px;
     padding: 5px;
-    width: 200px;
+    width: 210px;
+    height: 420px;
+    overflow:"auto";
 }
 
 .res-container {
@@ -72,6 +74,7 @@ margin: 10px;
     cursor: pointer;
  padding: 0 20px;
     margin-right: 10px;
+    
 }
 
 .filter {
