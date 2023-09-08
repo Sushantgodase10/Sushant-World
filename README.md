@@ -100,3 +100,31 @@ https://www.youtube.com/watch?v=tcLW5d0KAYE
 # what is shimmer ui
 -> A shimmer UI is a version of the UI that doesn't contain actual content, but instead mimics the layout and 
    shapes of the content that will eventually appear
+
+   # React Hooks
+   (Normal JS utility funcation)
+
+- useState() - Superpowerful state Varibales in react
+- useEffect()
+
+# 2 type of Routing in web apps
+Why it's Single page Application
+=> it just one just componenet it's changes
+ 
+- Clinet Side Routing
+=>  Client-side routing refers to the practice of handling navigation and page rendering on the user's device, enhancing web application interactivity.
+
+- Server Side Routing
+ => We mak  network call and that page tha about HTML comming form server is called Server Side Routing.
+
+ # useEffect it is two argument
+
+=> now i'am import my useEffect form react library(this a name imported) so spik vluve code,and the we have useEffect hooks over here which have 2 argument  1) 1 st is callback funcations and  
+ 2) 2 ed it is a offional argument  keep emty what happen .if have don't any Dependencie array over here than this useEffect we call every time my componenet render, 
+ do have  meak every time my api call render it's no
+ no it's fu lesh , i just have do it ones and initial remnder i will just use a emty Dependencie array 
+
+ what is the life cycle of this react componenet
+
+  # Who this componenet put up in the webpage 
+  # who this componenet loaded in the webpage (we use the words mounted)

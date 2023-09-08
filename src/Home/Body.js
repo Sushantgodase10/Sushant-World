@@ -13,6 +13,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Divider } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
@@ -64,15 +65,15 @@ const Body = () => {
         </button>
       </div> */}
       <Stack
-       flexDirection="column"
-       width="280px"
-       padding="10px"
-       boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
-       position="sticky"
-       borderColor="black"
-       float="left"
-       overflow="auto"
-       borderRight="1px solid #ddd"
+        flexDirection="column"
+        width="280px"
+        padding="10px"
+        boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
+        position="sticky"
+        borderColor="black"
+        float="left"
+        overflow="auto"
+        borderRight="1px solid #ddd"
       >
         <Flex flexDirection="column" width="240px" borderColor="black">
           <Text fontWeight="bold">Top Rated Restaurant</Text>
@@ -189,9 +190,13 @@ const Body = () => {
         marginLeft="250px"
       >
         {filteredRestaurant.map((restaurant) => (
-          <RestaurantCard resData={restaurant?.info} />
-        ))}
-        ;
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurants/" + restaurant.info.id}
+          >
+            <RestaurantCard resData={restaurant?.info} />
+          </Link>
+        ))};  
       </Flex>
     </div>
   );
