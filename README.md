@@ -128,3 +128,18 @@ Why it's Single page Application
 
   # Who this componenet put up in the webpage 
   # who this componenet loaded in the webpage (we use the words mounted)
+
+  # When will be useEffect is call/ When will fuction will we called ?
+- After evary render useEffect called
+- After each and evary render is my useEffect fucations will     called 
+# What will be the call first time (render)
+  => After first render  compoenetDidMount is called 
+
+  and after sub equla render it's compoenetDidUpdate is called ther is diffreance between DidMount and DidUpdate 
+
+  # When will be the call  compoenetWillUnmount call?
+  - When  will be componentWillUnMount called is  when we are leving the page
+
+  # what will be Clear/  when we leving the page ?
+  - If have a setInterval and at set that okay do a console log of  a sushant react Op after evary seconed (waht will hapan ) it's started printing  sushant react OP after each seconed.
+  - When youre changeing  youre pages it is not reloading youre page, it's just changeing the components, it's just rendering the react is reconsling, it's power SPA but bad thing a single page application 
