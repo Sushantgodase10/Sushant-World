@@ -4,6 +4,7 @@ import User from './User';
 import {
   Flex,Text,
 } from "@chakra-ui/react";
+import UserClass from './UserClass';
 
 const About = () => {
 
@@ -22,6 +23,7 @@ const About = () => {
     <Flex  justifyContent="center"
     alignItems="center">
        <User/>
+       <UserClass/>
     </Flex>
     </>
   )
