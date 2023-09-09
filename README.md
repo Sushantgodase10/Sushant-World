@@ -142,4 +142,21 @@ Why it's Single page Application
 
   # what will be Clear/  when we leving the page ?
   - If have a setInterval and at set that okay do a console log of  a sushant react Op after evary seconed (waht will hapan ) it's started printing  sushant react OP after each seconed.
-  - When youre changeing  youre pages it is not reloading youre page, it's just changeing the components, it's just rendering the react is reconsling, it's power SPA but bad thing a single page application 
+  - When youre changeing  youre pages it is not reloading youre page, it's just changeing the components, it's just rendering the react is reconsling, it's power SPA but bad thing a single page application
+
+# Chunking
+# Code Splitting
+# Dynamic Bundling 
+- All of then JS file size and we have a lot of child componenets inside the evary compoenets are bundling the size
+# Why to be called Lazy loading/ on demand loading?
+- When are app load intialy  are app Home we load it will not load the code for Grocery, only when i go to my Grocery page then only Grocery  then will Grocery code in the app. that is know as lazy loading
+
+# Ui library
+- https://chakra-ui.com/
+- https://mui.com/material-ui/
+- https://tailwindcss.com/
+- install VS code in 	 Tailwind CSS IntelliSense
+- https://ant.design/
+- https://styled-components.com/
+- https://sass-lang.com/
+- https://getbootstrap.com/
