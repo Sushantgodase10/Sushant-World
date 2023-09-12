@@ -1,25 +1,20 @@
 import reslist from "../utils/mockData";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard , { withPromtedLabel} from "./RestaurantCard";
 import reslist from "../utils/mockData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer";
-import {
-  Flex,
-  Stack,
-  Input,
-  Radio,
-  RadioGroup,
-  Text,
-  Button,
-} from "@chakra-ui/react";
-import { Divider } from "@chakra-ui/react";
+
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
-
   const [searchText, setSearchText] = useState("");
+
+  const {loggedInUser, setUserName} = useContext(UserContext);
+  // const RestaurantPromoted = withPromtedLabel();
 
   // whenever state variables update, react triggers a reconciliation cycle(re-renders the component)
   console.log("Body render");
@@ -44,6 +39,15 @@ const Body = () => {
     );
   };
 
+  const OnlineStatus = useOnlineStatus();
+  if (OnlineStatus === false)
+    return (
+      <h1>
+        Look's like you're offline!! please check your internet connections
+      </h1>
+    );
+
+
   // if (listOfRestaurants.length === 0) {
   //   return <Shimmer />;
   // }
@@ -64,23 +68,10 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div> */}
-      <Stack
-        flexDirection="column"
-        width="280px"
-        padding="10px"
-        boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"
-        position="sticky"
-        borderColor="black"
-        float="left"
-        overflow="auto"
-        borderRight="1px solid #ddd"
-      >
-        <Flex flexDirection="column" width="240px" borderColor="black">
-          <Text fontWeight="bold">Top Rated Restaurant</Text>
-          <Button
-            width="190px"
-            backgroundColor="#56C0F8"
-            margin={2}
+      <div className="flex">
+      
+         <div className="search m-4 p-4">
+          <button className="px-4 py-2 bg-gray-100 m-4  rounded-lg"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4
@@ -89,30 +80,21 @@ const Body = () => {
             }}
           >
             Restaurant
-          </Button>
-        </Flex>
-        <Divider />
-        <Flex
-          style={{
-            flexDirection: "column",
-            marginLeft: 10,
-            borderColor: "black",
-            width: "200px",
-          }}
-        >
-          <Text fontWeight="bold">Destination</Text>
-          <input
+          </button>
+          </div>
+        <div className="search m-4 p-4"> 
+            <input
             type="text"
             placeholder="Search here"
-            className="search-box"
+            className="border border-solid border-black"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
-          <Button
+          <button
+          className="px-4 py-2 bg-green-100 m-4 rounded-lg"
             width="190px"
-            backgroundColor="#56C0F8"
             margin={2}
             onClick={() => {
               const filteredRestaurant = listOfRestaurants.filter((res) =>
@@ -123,10 +105,15 @@ const Body = () => {
             }}
           >
             Search
-          </Button>
-        </Flex>
-        <Divider />
-        <Flex
+          </button>
+        </div>
+        <div className="search m-4 p-4 flex items-center">
+          <label>UserName : </label>
+           <input className="border border-black p-2"
+           value={loggedInUser}
+           onChange={(e) => setUserName(e.target.value)}/>
+         </div>
+        {/* <div
           style={{
             flexDirection: "column",
             marginLeft: 10,
@@ -134,7 +121,7 @@ const Body = () => {
             width: "200px",
           }}
         >
-          <Text fontWeight="bold">Loaction</Text>
+          <div fontWeight="bold">Loaction</div>
           <RadioGroup>
             <Stack>
               <Radio value="All" isDisabled>
@@ -154,7 +141,7 @@ const Body = () => {
           >
             Filter
           </Button>
-        </Flex>
+        </div>
         <Divider />
         <Flex
           style={{
@@ -177,18 +164,10 @@ const Body = () => {
             Filter
           </Button>
         </Flex>
-        <Divider />
-      </Stack>
+        <Divider /> */}
+      </div>
 
-      <Flex
-        justifyContent="center"
-        alignItems="center"
-        marginBottom={20}
-        flexWrap="wrap"
-        gap={5}
-        flex="1"
-        marginLeft="250px"
-      >
+      <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => (
           <Link
             key={restaurant.info.id}
@@ -196,8 +175,9 @@ const Body = () => {
           >
             <RestaurantCard resData={restaurant?.info} />
           </Link>
-        ))};  
-      </Flex>
+        ))}
+        ;
+      </div>
     </div>
   );
 };

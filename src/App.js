@@ -1,8 +1,6 @@
-import React from "react";
-import * as React from 'react';
-
+import React, { useState, useEffect } from "react";
+import * as React from "react";
 import ReactDOM from "react-dom/client";
-import {ChakraProvider } from '@chakra-ui/react'
 import Body from "./Home/Body";
 import Header from "./components/Navigation/Header";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -10,14 +8,32 @@ import Contact from "./Home/Contact";
 import About from "./Home/About";
 import Error from "./Home/Error";
 import RestaurantMenu from "./Home/RestaurantMenu";
+import UserContext from "./utils/UserContext";
+import { Provider  } from "react-redux";
+import appStore from "./utils/appStore";
 // component Compositions
 
+// const About = React.lazy(() => import(""));
+
 const Applayout = () => {
+  const [userName, setUserName] = useState();
+
+  useEffect(() => {
+    const data = {
+      name: "Sushant Godase",
+    };
+    setUserName(data.name);
+  }, []);
+
   return (
-    <ChakraProvider>
-      <Header />
-    <Outlet/>
-    </ChakraProvider>
+    <Provider  store={appStore}>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+    <div className="app">
+        <Header />
+        <Outlet />
+    </div>
+    </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -25,7 +41,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <Applayout />,
-    children:[
+    children: [
       {
         path: "/",
         element: <Body />,
@@ -40,12 +56,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/restaurants/:resId",
-        element: <RestaurantMenu/>
+        element: <RestaurantMenu />,
       },
     ],
-    errorElement: <Error/>,
+    errorElement: <Error />,
   },
-  
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
