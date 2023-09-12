@@ -120,24 +120,24 @@ Why it's Single page Application
  # useEffect it is two argument
 
 => now i'am import my useEffect form react library(this a name imported) so spik vluve code,and the we have useEffect hooks over here which have 2 argument  1) 1 st is callback funcations and  
- 2) 2 ed it is a offional argument  keep emty what happen .if have don't any Dependencie array over here than this useEffect we call every time my componenet render, 
+ 2) 2 ed it is a offional argument  keep emty what happen .if have don't any Dependencie array over here than this useEffect we call every time my component render, 
  do have  meak every time my api call render it's no
  no it's fu lesh , i just have do it ones and initial remnder i will just use a emty Dependencie array 
 
- what is the life cycle of this react componenet
+ what is the life cycle of this react component
 
-  # Who this componenet put up in the webpage 
-  # who this componenet loaded in the webpage (we use the words mounted)
+  # Who this component put up in the webpage 
+  # who this component loaded in the webpage (we use the words mounted)
 
   # When will be useEffect is call/ When will fuction will we called ?
 - After evary render useEffect called
 - After each and evary render is my useEffect fucations will     called 
 # What will be the call first time (render)
-  => After first render  compoenetDidMount is called 
+  => After first render  ccomponentDidMount is called 
 
-  and after sub equla render it's compoenetDidUpdate is called ther is diffreance between DidMount and DidUpdate 
+  and after sub equla render it's componentDidUpdate is called ther is diffreance between DidMount and DidUpdate 
 
-  # When will be the call  compoenetWillUnmount call?
+  # When will be the call  componentWillUnmount call?
   - When  will be componentWillUnMount called is  when we are leving the page
 
   # what will be Clear/  when we leving the page ?
@@ -147,7 +147,7 @@ Why it's Single page Application
 # Chunking
 # Code Splitting
 # Dynamic Bundling 
-- All of then JS file size and we have a lot of child componenets inside the evary compoenets are bundling the size
+- All of then JS file size and we have a lot of child components inside the evary compoenets are bundling the size
 # Why to be called Lazy loading/ on demand loading?
 - When are app load intialy  are app Home we load it will not load the code for Grocery, only when i go to my Grocery page then only Grocery  then will Grocery code in the app. that is know as lazy loading
 
@@ -160,3 +160,19 @@ Why it's Single page Application
 - https://styled-components.com/
 - https://sass-lang.com/
 - https://getbootstrap.com/
+
+# What is higher order components?
+- Higher order components is functoin that take's components and return components.
+# Redux  
+- Redux primery use handling useSate of appliction another advantages redux when we use redux appliaction become easy to debuuge
+
+# Redux- Toolkit
+- Install 1) npm install @reduxjs/toolkit 2) npm install react-redux
+-  Build our store
+-  Connect our store to our app
+-  Slice (cartSlice)
+-  dispatch(action)
+-  Selector
+-  
+# what is redux architecture all about?
+- 
