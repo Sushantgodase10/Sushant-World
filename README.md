@@ -176,3 +176,34 @@ Why it's Single page Application
 -  
 # what is redux architecture all about?
 - 
+# All Test Case
+- Manual Testing
+# Types Of testing (developer)
+- Unit Testing
+- Integration Testing
+- End to End Testing - e2e testing
+
+# What is Unit Testing
+- You test youre react component in isolations
+   Ex - hedaer component in  isolation in app, Basically i will jusy try to render my header comopnent and will 
+   she weather we got render properly or not. Only one spacepak component that type testing is know as Unit 
+   testing
+  - Testing One unit or component in isolation.
+    
+# What is Integration Testing?
+- Integration testing is testing the integrations component
+# What is End to End Testing 
+- Testing a react appliaction as soon as the user land on the website to the user leave on the website. we will 
+  test the all this flows. we test diffrent of the flow.
+# Settings up Testing in our app
+  - React Testing Library
+  - https://testing-library.com/docs/react-testing-library/intro/
+  - npm install --save-dev @testing-library/react
+  - Install Jest
+     - npm  i -D jest
+     - npm install --save-dev babel-jest @babel/core @babel/preset-env
+     - Add to File - babel config js add (module.exports = {
+        presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+         };)
+
+       
