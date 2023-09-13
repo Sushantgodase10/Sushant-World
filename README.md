@@ -230,5 +230,6 @@ Why it's Single page Application
    -  __test__ is called as dunder.
      
    - Install the
+     
          - npm i -D @babel/preset-react. -> to make JSX work in test cases.
          - Include @babel/preset-react inside my babel config.
