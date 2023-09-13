@@ -227,9 +227,9 @@ Why it's Single page Application
    -  Install JSDon / js dom library
         - https://testing-library.com/docs/react-testing-library/setup#jest-28
         -  npm install --save-dev jest-environment-jsdom
-   -  __test__ is called as dunder.
+   -  __test__ is called as dunder
      
    - Install the
      
-         - npm i -D @babel/preset-react. -> to make JSX work in test cases.
-         - Include @babel/preset-react inside my babel config.
+         - npm i -D @babel/preset-react. -> to make JSX work in test cases
+         - Include @babel/preset-react inside my babel config
