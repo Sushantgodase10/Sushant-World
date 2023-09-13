@@ -206,4 +206,22 @@ Why it's Single page Application
         presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
          };)
 
-       
+  - Configure parcel Config file to disable defult babel transpilation
+      - https://parceljs.org/languages/javascript/#babel
+  - Jest Configuration
+      - npx jest --init
+        Q - Would you like to use Typescript for the configuration file? » (y/N)
+          - No
+        Q - Choose the test environment that will be used for testing » - Use arrow-keys. Return to submit.
+             >   node
+             jsdom (browser-like) press inter
+              - Select to    jsdom (browser-like) press inter
+        Q - Do you want Jest to add coverage reports? » (y/N)
+              - Yes
+        Q - Which provider should be used to instrument code for coverage? » - Use arrow-keys. Return to submit.
+              >   v8
+              babel
+              - Select to babel
+        Q -  Automatically clear mock calls, instances, contexts and results before every test? » (y/N)
+              - Yes
+ 
