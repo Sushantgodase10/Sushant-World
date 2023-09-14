@@ -1,3 +1,5 @@
+
+import { Provider  } from "react-redux";
 import React, { useState, useEffect } from "react";
 import * as React from "react";
 import ReactDOM from "react-dom/client";
@@ -9,11 +11,11 @@ import About from "./Home/About";
 import Error from "./Home/Error";
 import RestaurantMenu from "./Home/RestaurantMenu";
 import UserContext from "./utils/UserContext";
-import { Provider  } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./Home/Cart";
 // component Compositions
 
-// const About = React.lazy(() => import(""));
+// const About = React.lazy(() => import("/about"));
 
 const Applayout = () => {
   const [userName, setUserName] = useState();
@@ -57,6 +59,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
+      }
+      ,
+      {
+        path: "/cart",
+        element: <Cart/>,
       },
     ],
     errorElement: <Error />,
