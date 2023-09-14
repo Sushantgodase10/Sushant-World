@@ -6,7 +6,7 @@ import ItemList from "./ItemList";
 import { useDispatch } from "react-redux";
 
 const Cart = () => {
-    const cartItems = useSelector((store) => store.cart.items);
+    const cartItems = useSelector((store) => store.cart.item);
   
     console.log(cartItems);
   
