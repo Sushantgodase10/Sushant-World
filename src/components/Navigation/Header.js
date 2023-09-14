@@ -21,17 +21,15 @@ const Header = () => {
 
   // Subscrbing to the store using to Selector
   const cartItems = useSelector((store) => store.cart.items);
-
+  console.log(cartItems);
   return (
     <div className="flex justify-between bg-pink-50 shadow-lg">
       <div className="logo-container">
         <img className="w-36" src={LOGO_URL} />
       </div>
-      <div className="flex items-center">
+      <div className="flex items-csenter">
         <ul className="flex p-4 m-4">
-          <li className="px-4">
-            OnlineStatus: {OnlineStatus ? "Cheack" : "red"}
-          </li>
+          <li className="px-4">Online Status: {OnlineStatus ? "✅" : "🔴"}</li>
           <li className="px-4">
             <Link to="/">Home</Link>
           </li>
@@ -42,7 +40,8 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li className="px-4 font-bold text-xl">
-            Cart -({cartItems.length} items )</li>
+            <Link to="/cart">Cart -({cartItems.length} items )</Link>
+          </li>
           <button
             className="login"
             onClick={() => {

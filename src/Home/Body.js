@@ -108,8 +108,8 @@ const Body = () => {
           </button>
         </div>
         <div className="search m-4 p-4 flex items-center">
-          <label>UserName : </label>
-           <input className="border border-black p-2"
+          <label>UserName :</label>
+           <input className="border border-black"
            value={loggedInUser}
            onChange={(e) => setUserName(e.target.value)}/>
          </div>
