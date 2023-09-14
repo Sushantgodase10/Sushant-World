@@ -215,7 +215,7 @@ Why it's Single page Application
         Q - Choose the test environment that will be used for testing » - Use arrow-keys. Return to submit.
              >   node
              jsdom (browser-like) press inter
-              - Select to    jsdom (browser-like) press inter
+              - Select to jsdom (browser-like) press inter
         Q - Do you want Jest to add coverage reports? » (y/N)
               - Yes
         Q - Which provider should be used to instrument code for coverage? » - Use arrow-keys. Return to submit.
@@ -230,7 +230,8 @@ Why it's Single page Application
    -  __test__ is called as dunder
      
    - Install the
-     
          - npm i -D @babel/preset-react. -> to make JSX work in test cases
          - Include @babel/preset-react inside my babel config
+   - Install the
+         - npm install -D @testing-library/jest-dom
      
