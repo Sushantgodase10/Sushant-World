@@ -7,6 +7,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import ShimmerUI from "./ShimmerUI";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestraunt] = useState([]);
@@ -42,18 +43,18 @@ const Body = () => {
   const OnlineStatus = useOnlineStatus();
   if (OnlineStatus === false)
     return (
-      <h1>
+      <h1 className=" m-5 border-gray-200 border-b-2 text-red-500 text-lg flex justify-center w-6/12 mx-auto my-4 bg-gray-50 shadow-lg p-7 rounded-lg">
         Look's like you're offline!! please check your internet connections
       </h1>
     );
 
 
-  // if (listOfRestaurants.length === 0) {
-  //   return <Shimmer />;
-  // }
+  if (listOfRestaurants.length === 0) {
+    return <ShimmerUI/>
+  }
 
   return (
-    <div className="body">
+    <div className="body mx-5 px-4">
       {/* <div className="filter">
         
         <button
@@ -68,10 +69,11 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div> */}
-      <div className="flex">
+      <div className="flex justify-center">
       
          <div className="search m-4 p-4">
-          <button className="px-4 py-2 bg-gray-100 m-4  rounded-lg"
+          <span className="text-lgs">Top  Restaurant</span>
+          <button className="px-4 py-2 bg-blue-300 m-4  rounded-lg"
             onClick={() => {
               const filteredList = listOfRestaurants.filter(
                 (res) => res.info.avgRating > 4
@@ -86,14 +88,15 @@ const Body = () => {
             <input
             type="text"
             placeholder="Search here"
-            className="border border-solid border-black"
+            className="border border-solid border-black rounded-lg p-2 "
+            
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
             }}
           />
           <button
-          className="px-4 py-2 bg-green-100 m-4 rounded-lg"
+          className="px-4 py-2 bg-blue-300 m-4 rounded-lg"
             width="190px"
             margin={2}
             onClick={() => {
@@ -109,7 +112,7 @@ const Body = () => {
         </div>
         <div className="search m-4 p-4 flex items-center">
           <label>UserName :</label>
-           <input className="border border-black"
+           <input className="m-1 border border-black rounded-lg p-2"
            value={loggedInUser}
            onChange={(e) => setUserName(e.target.value)}/>
          </div>
@@ -167,7 +170,7 @@ const Body = () => {
         <Divider /> */}
       </div>
 
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap px-4 py-0">
         {filteredRestaurant.map((restaurant) => (
           <Link
             key={restaurant.info.id}
@@ -176,7 +179,6 @@ const Body = () => {
             <RestaurantCard resData={restaurant?.info} />
           </Link>
         ))}
-        ;
       </div>
     </div>
   );
