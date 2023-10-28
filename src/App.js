@@ -1,7 +1,6 @@
 
 import { Provider  } from "react-redux";
 import React, { useState, useEffect } from "react";
-import * as React from "react";
 import ReactDOM from "react-dom/client";
 import Body from "./Home/Body";
 import Header from "./components/Navigation/Header";
