@@ -15,7 +15,7 @@ const {
 
 
 return (
-        <div className=" m-4 p-1 w-[260px] h-[350px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300" >
+        <div className=" m-4 p-1 w-[230px] h-[350px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300" >
             <img 
             className="rounded-lg"
             alt="res-logo"

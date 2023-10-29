@@ -5,7 +5,6 @@ import useOnlineStatus from "../../utils/useOnlineStatus";
 import UserContext from "../../utils/UserContext";
 import { useSelector } from "react-redux";
 import logo from "../img/Restaurant Logo.png";
-import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   const [btnNameReact, setBtnNameReact] = useState("Login");
@@ -85,7 +84,6 @@ const Header = () => {
                 <Link to="/cart">
                   <span className="text-lg font-bold relative">
                     {/* Cart Icon */}
-                    <FaShoppingCart className="inline-block mr-2" />
                     Cart
                     {/* Display the number of items in the cart */}
                     <span className="mx-1 -top-1 -right-1 bg-red-500 text-white px-2 py-1 rounded-full">
