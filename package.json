@@ -4,8 +4,8 @@
   "description": "Thisis Sushant World Web  by Sushant Godase",
   "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
-    "bulid": "parcel bulid index.html",
+    "start": "parcel index.html","build": "parcel build index.html",
+
     "test": "jest"
   },
   "repository": {
