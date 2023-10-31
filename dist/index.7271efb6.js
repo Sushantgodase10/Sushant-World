@@ -30139,7 +30139,7 @@ const RestaurantCard = (props)=>{
     const { resData } = props;
     const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, deliveryTime } = resData;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: " m-4 p-1 w-[250px] h-[366px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300",
+        className: " m-4 p-1 w-[250px] h-[363px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "rounded-lg",
