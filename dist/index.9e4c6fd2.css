@@ -271,6 +271,10 @@ img, video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -287,6 +291,10 @@ img, video {
   top: -.25rem;
 }
 
+.bottom-0 {
+  bottom: 0;
+}
+
 .left-0 {
   left: 0;
 }
@@ -297,6 +305,10 @@ img, video {
 
 .top-0 {
   top: 0;
+}
+
+.bottom-1 {
+  bottom: .25rem;
 }
 
 .z-10 {
@@ -446,8 +458,16 @@ img, video {
   height: 350px;
 }
 
+.h-\[365px\] {
+  height: 365px;
+}
+
 .h-\[60px\] {
   height: 60px;
+}
+
+.h-\[366px\] {
+  height: 366px;
 }
 
 .w-10 {
@@ -484,10 +504,6 @@ img, video {
 
 .w-9\/12 {
   width: 75%;
-}
-
-.w-\[230px\] {
-  width: 230px;
 }
 
 .w-\[250px\] {
@@ -800,6 +816,11 @@ img, video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .text-left {

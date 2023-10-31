@@ -15,14 +15,14 @@ const {
 
 
 return (
-        <div className=" m-4 p-1 w-[230px] h-[350px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300" >
+        <div className=" m-4 p-1 w-[250px] h-[363px] bg-gray-100 rounded-lg hover:bg-gray-300 shadow-lg border borer-gray-300" >
             <img 
             className="rounded-lg"
             alt="res-logo"
             src={CDN_URL
              + cloudinaryImageId}
             />
-            <h3 className="font-bold py-4 text-lg">{name}</h3>
+            <h3 className="font-bold py-3 text-lg">{name}</h3>
             <h4 className=" text-base font-medium text-dark hover:text-primary">{cuisines.join(", ")}</h4>
             <h4 className=" text-base font-medium text-dark hover:text-primary">{deliveryTime}</h4>
             <h4 className=" text-base font-medium text-dark hover:text-primary">{costForTwo}</h4>
