@@ -26,7 +26,12 @@ Window + Alt + r = video record
 - git merge master
 -      
   ----------------------------------------
-  
+# Step for Deployment
+- Install firebase cli - npm install -g firebase-tools
+- Firebase Login - firebase login
+- initilize Firbase - firebase init , and then select Hosting
+- npm run build
+- Deploy command - firebase deploy
 # 2 what is npm ?
 - => npm does have a full from but npm  not a node pakage manager , npm manage a pakage but does not stand node  pakages manager
 
